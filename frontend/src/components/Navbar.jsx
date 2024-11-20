@@ -27,7 +27,7 @@ export const Navbar = () => {
               </a>
             </div>
             <div className="links">
-              <ul className="display: flex gap-[48px] md:hidden">
+              <ul className="display: flex gap-[48px] lg:gap-8 md:hidden">
                 <li>
                   <a
                     href="/"
