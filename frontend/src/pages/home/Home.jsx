@@ -19,7 +19,7 @@ export const Home = () => {
                 <FaBriefcase size={20} />
               </button>
               <div className="sm:text-center">
-                <h2 className="text-[62px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[38px]">
+                <h2 className="text-[62px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[38px] font-bold">
                   Travel to <span className="text-[#F85E9F]">top</span>
                   <br />
                   <span className="text-[#F85E9F]">destinations</span> around
@@ -88,7 +88,7 @@ export const Home = () => {
           <div className="content">
             <div className="text-center">
               <h3 className="text-[#F85E9F]">Services</h3>
-              <h2 className="font-bold">
+              <h2 className="font-bold normal-case xs:text-[32px]">
                 Our top value
                 <br />
                 categories for you
@@ -105,7 +105,7 @@ export const Home = () => {
             <div className="flex items-center justify-between display: sm:flex-col">
               <div className="mb-6 sm: sm:text-center">
                 <h3 className="text-[#F85E9F] uppercase">Top destinations</h3>
-                <h2 className="font-bold normal-case">
+                <h2 className="font-bold normal-case xs:text-[32px]">
                   Explore top destinations
                 </h2>
               </div>
@@ -133,7 +133,7 @@ export const Home = () => {
             />
             <div className="md:text-center">
               <h3 className="text-[#F85E9F] uppercase">Travel Point</h3>
-              <h2 className="font-bold normal-case">
+              <h2 className="font-bold normal-case xs:text-[32px]">
                 We helping you find
                 <br />
                 your dream location
@@ -157,7 +157,7 @@ export const Home = () => {
             <div className="left-wrapper">
               <div className="md:text-center">
                 <h3 className="text-[#F85E9F] uppercase">Key Features</h3>
-                <h2 className="font-bold normal-case lg:text-[34px]">
+                <h2 className="font-bold normal-case lg:text-[34px] xs:text-[32px]">
                   We offer best services
                 </h2>
                 <p className="text-[#191825] mt-1 mb-8 lg:text-[14px]">
@@ -175,6 +175,45 @@ export const Home = () => {
               alt="Paradise on Earth"
               className="xl:w-[500px] lg:w-[400px] md:w-[100%]"
             />
+          </div>
+        </div>
+      </section>
+      {/* Testimonials */}
+      {/* Implement Swiper Effect */}
+      <section className="bg-[url('/images/home/Layer_1.png')] bg-cover bg-center bg-no-repeat mt-8">
+        <div className="container">
+          <div className="flex items-center justify-between">
+            <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
+              <FaArrowLeft />
+            </div>
+            <div className="flex flex-col items-center gap-8">
+              <div className="text-center">
+                <h3 className="text-[#F85E9F]">Testimonials</h3>
+                <h2 className="font-bold normal-case xs:text-[32px]">
+                  Trust our clients
+                </h2>
+              </div>
+              <img src="/images/home/Ellipse 22.png" alt="A person" />
+              <p>
+                <span className="text-[20px] p-1 text-[#FF5722] font-bold">
+                  Mark Smith
+                </span>
+                /
+                <span className="text-[16px] p-1 text-[#191825]">
+                  Travel Enthusiast
+                </span>
+              </p>
+              <img src="/images/home/Frame 54.png" alt="Stars" />
+              <p className="text-center xs:text-[14px]">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots
+                <br />
+                in a piece of classical Latin literature from 45 BC.
+              </p>
+            </div>
+            <div className="bg-[#5D50C6] p-6 rounded-[50%] md:p-4 sm:p-2">
+              <FaArrowRight color="white" />
+            </div>
           </div>
         </div>
       </section>
