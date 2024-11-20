@@ -26,13 +26,13 @@ export const Home = () => {
                   <br />
                   the world
                 </h2>
-                <p className="text-[#191825] lg:text-[14px] md:text-[12px] sm:text-[14px]">
+                <p className="text-[#191825] lg:text-[14px] md:text-[12px] sm:text-[14px] xs:text-[14px]">
                   We always make our customers happy by
                   <br />
                   providing as many choices as possible
                 </p>
               </div>
-              <div className="flex items-center gap-8 mt-8 display: sm:justify-center">
+              <div className="flex items-center gap-8 mt-8 lg:gap-2 sm:justify-center">
                 <button className="bg-[#5D50C6] py-3 px-8 rounded-[12px] text-white transition duration-[.3] ease-in-out hover:opacity-[.9] md:px-6">
                   Get Started
                 </button>
@@ -138,7 +138,7 @@ export const Home = () => {
                 <br />
                 your dream location
               </h2>
-              <p className="text-[#191825] mt-2">
+              <p className="text-[#191825] mt-2 xs:text-[14px]">
                 Contrary to popular belief, Lorem Ipsum is not
                 <br />
                 simply random text. It has roots in a piece of
@@ -160,7 +160,7 @@ export const Home = () => {
                 <h2 className="font-bold normal-case lg:text-[34px] xs:text-[32px]">
                   We offer best services
                 </h2>
-                <p className="text-[#191825] mt-1 mb-8 lg:text-[14px]">
+                <p className="text-[#191825] mt-1 mb-8 lg:text-[14px] xs:text-[14px]">
                   Contrary to popular belief, Lorem Ipsum is not simply random
                   <br />
                   text. It has roots in a piece of classical Latin literature
@@ -195,16 +195,16 @@ export const Home = () => {
               </div>
               <img src="/images/home/Ellipse 22.png" alt="A person" />
               <p>
-                <span className="text-[20px] p-1 text-[#FF5722] font-bold">
+                <span className="text-[20px] p-1 text-[#FF5722] font-bold xs:text-[16px]">
                   Mark Smith
                 </span>
                 /
-                <span className="text-[16px] p-1 text-[#191825]">
+                <span className="text-[16px] p-1 text-[#191825] xs:text-[14px]">
                   Travel Enthusiast
                 </span>
               </p>
               <img src="/images/home/Frame 54.png" alt="Stars" />
-              <p className="text-center xs:text-[14px]">
+              <p className="text-center xs:text-[12px]">
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots
                 <br />
@@ -213,6 +213,33 @@ export const Home = () => {
             </div>
             <div className="bg-[#5D50C6] p-6 rounded-[50%] md:p-4 sm:p-2">
               <FaArrowRight color="white" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Subscribe */}
+      <section className="mt-8">
+        <div className="container">
+          <div className="flex flex-col items-center gap-12">
+            <div className="text-center">
+              <h2 className="text-[#F85E9F] text-[22px] mt-8 mb-2 md:text-[20px]">
+                Subscribe To Our Newsletter
+              </h2>
+              <h3 className="text-[38px] font-bold md:text-[26px]">
+                Prepare yourself &#38; Let&#39;s explore the
+                <br />
+                beauty of the world
+              </h3>
+            </div>
+            <div className="flex">
+              <input
+                type="text"
+                placeholder="Your Email"
+                className="p-3 rounded-l-[12px] w-[400px] md:w-[280px] sm:w-[240px] xs:w-[180px]"
+              />
+              <button className="bg-[#5D50C6] p-4 rounded-r-[12px] text-white hover:opacity-[.9]">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

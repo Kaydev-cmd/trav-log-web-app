@@ -12,10 +12,10 @@ export const KeyFeaturesCards = () => {
             className="lg:w-16"
           />
           <div className="right-wrapper">
-            <h5 className="font-bold text-[18px] xs:text-[16px]">
+            <h5 className="font-bold text-[18px] xs:text-[14px]">
               We offer best services
             </h5>
-            <p className="text-[#191825]">
+            <p className="text-[#191825] xs:text-[12px]">
               Lorem Ipsum is not simply random text
             </p>
           </div>
@@ -29,10 +29,10 @@ export const KeyFeaturesCards = () => {
             className="lg:w-16"
           />
           <div className="right-wrapper">
-            <h5 className="font-bold text-[18px] xs:text-[16px]">
+            <h5 className="font-bold text-[18px] xs:text-[14px]">
               Schedule your trip
             </h5>
-            <p className="text-[#191825]">
+            <p className="text-[#191825] xs:text-[12px]">
               It has roots in a piece of classical
             </p>
           </div>
@@ -46,10 +46,10 @@ export const KeyFeaturesCards = () => {
             className="lg:w-16"
           />
           <div className="right-wrapper">
-            <h5 className="font-bold text-[18px] xs:text-[16px]">
+            <h5 className="font-bold text-[18px] xs:text-[14px]">
               Get discounted coupons
             </h5>
-            <p className="text-[#191825]">
+            <p className="text-[#191825] xs:text-[12px]">
               Lorem Ipsum is not simply random text
             </p>
           </div>
