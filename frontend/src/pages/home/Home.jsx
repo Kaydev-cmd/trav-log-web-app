@@ -117,6 +117,74 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      {/* Icons */}
+      <section className="mt-8">
+        <div className="container">
+          <div
+            className="
+            display: flex
+            justify-between
+            items-center
+            "
+          >
+            <img
+              src="/images/home/Group.png"
+              alt="Trip Advisor"
+              className="
+              lg:w-20
+              lg:h-4
+              sm:w-16
+              sm:h-4
+              xs:w-12
+              xs:h-4
+              "
+            />
+            <img
+              src="/images/home/Group 2.png"
+              alt="Expedia"
+              className="
+              lg:w-20
+              lg:h-6
+              sm:w-16
+              sm:h-6
+              xs:w-12
+              xs:h-6
+            "
+            />
+            <img
+              src="/images/home/Group 3.png"
+              alt="Booking.com"
+              className="
+              lg:w-20
+              lg:h-4
+              sm:w-16
+              sm:h-4
+              xs:w-14
+            "
+            />
+            <img
+              src="/images/home/Group 9235.png"
+              alt="Air BnB"
+              className="
+              lg:w-20
+              lg:h-6
+              sm:w-16
+              xs:w-14
+            "
+            />
+            <img
+              src="/images/home/Group 4.png"
+              alt="Orbitz"
+              className="
+              lg:w-20
+              lg:h-4
+              sm:w-16
+              xs:w-14
+            "
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 };
