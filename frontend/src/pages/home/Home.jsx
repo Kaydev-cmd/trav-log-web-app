@@ -1,6 +1,8 @@
 import React from "react";
 import { ServicesCards } from "../../components/ServicesCards";
+import { DestinationCards } from "../../components/DestinationCards";
 import { FaBriefcase } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -91,6 +93,28 @@ export const Home = () => {
               </h2>
             </div>
             <ServicesCards />
+          </div>
+        </div>
+      </section>
+      {/* Top Destinations */}
+      <section className="mt-8">
+        <div className="container">
+          <div className="content">
+            <div className="display: flex justify-between items-center sm:flex-col">
+              <div className="sm: mb-6 sm:text-center">
+                <h3 className="text-[#F85E9F] uppercase">Top destinations</h3>
+                <h2 className="normal-case">Explore top destinations</h2>
+              </div>
+              <div className="display: flex items-center gap-6 sm:gap-3">
+                <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
+                  <FaArrowLeft />
+                </div>
+                <div className="bg-[#5D50C6] p-6 rounded-[50%] md:p-4 sm:p-2">
+                  <FaArrowRight color="white" />
+                </div>
+              </div>
+            </div>
+            <DestinationCards />
           </div>
         </div>
       </section>
