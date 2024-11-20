@@ -1,6 +1,7 @@
 import React from "react";
 import { ServicesCards } from "../../components/ServicesCards";
 import { DestinationCards } from "../../components/DestinationCards";
+import { TravelPointsCards } from "../../components/TravelPointsCards";
 import { FaBriefcase } from "react-icons/fa6";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -86,7 +87,7 @@ export const Home = () => {
           <div className="content">
             <div className="text-center">
               <h3 className="text-[#F85E9F]">Services</h3>
-              <h2>
+              <h2 className="font-bold">
                 Our top value
                 <br />
                 categories for you
@@ -103,7 +104,9 @@ export const Home = () => {
             <div className="display: flex justify-between items-center sm:flex-col">
               <div className="sm: mb-6 sm:text-center">
                 <h3 className="text-[#F85E9F] uppercase">Top destinations</h3>
-                <h2 className="normal-case">Explore top destinations</h2>
+                <h2 className="normal-case font-bold">
+                  Explore top destinations
+                </h2>
               </div>
               <div className="display: flex items-center gap-6 sm:gap-3">
                 <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
@@ -115,6 +118,34 @@ export const Home = () => {
               </div>
             </div>
             <DestinationCards />
+          </div>
+        </div>
+      </section>
+      {/* Travel Point */}
+      <section className="mt-8">
+        <div className="container">
+          <div className="display: flex items-center justify-around md:flex-col-reverse">
+            <img
+              src="/images/home/Group 9238.png"
+              alt="Travel point banner"
+              className="xl:w-[600px] lg:w-[400px] md:w-[100%] md:mt-12"
+            />
+            <div className="md:text-center">
+              <h3 className="text-[#F85E9F] uppercase">Travel Point</h3>
+              <h2 className="normal-case font-bold">
+                We helping you find
+                <br />
+                your dream location
+              </h2>
+              <p className="text-[#191825] mt-2">
+                Contrary to popular belief, Lorem Ipsum is not
+                <br />
+                simply random text. It has roots in a piece of
+                <br />
+                classical Latin literature from 45 BC.
+              </p>
+              <TravelPointsCards />
+            </div>
           </div>
         </div>
       </section>
