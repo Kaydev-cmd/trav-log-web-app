@@ -2,6 +2,7 @@ import React from "react";
 import { ServicesCards } from "../../components/ServicesCards";
 import { DestinationCards } from "../../components/DestinationCards";
 import { TravelPointsCards } from "../../components/TravelPointsCards";
+import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
 import { FaBriefcase } from "react-icons/fa6";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -11,7 +12,7 @@ export const Home = () => {
       {/* Hero */}
       <section className="mt-8">
         <div className="container">
-          <div className="display: flex justify-around items-center">
+          <div className="flex items-center justify-around display:">
             <div className="left-wrapper">
               <button className="display: flex items-center gap-[8px] bg-white p-3 rounded-[12px] text-[#F85E9F] mb-8 transition duration-[.3] ease-in-out hover:bg-[#000] sm:my-0 sm:mx-auto">
                 Explore the world!
@@ -31,7 +32,7 @@ export const Home = () => {
                   providing as many choices as possible
                 </p>
               </div>
-              <div className="display: flex items-center gap-8 mt-8 sm:justify-center">
+              <div className="flex items-center gap-8 mt-8 display: sm:justify-center">
                 <button className="bg-[#5D50C6] py-3 px-8 rounded-[12px] text-white transition duration-[.3] ease-in-out hover:opacity-[.9] md:px-6">
                   Get Started
                 </button>
@@ -52,7 +53,7 @@ export const Home = () => {
       {/* Icons */}
       <section className="mt-8">
         <div className="container">
-          <div className="display: flex justify-between items-center">
+          <div className="flex items-center justify-between display:">
             <img
               src="/images/home/Group.png"
               alt="Trip Advisor"
@@ -101,14 +102,14 @@ export const Home = () => {
       <section className="mt-8">
         <div className="container">
           <div className="content">
-            <div className="display: flex justify-between items-center sm:flex-col">
-              <div className="sm: mb-6 sm:text-center">
+            <div className="flex items-center justify-between display: sm:flex-col">
+              <div className="mb-6 sm: sm:text-center">
                 <h3 className="text-[#F85E9F] uppercase">Top destinations</h3>
-                <h2 className="normal-case font-bold">
+                <h2 className="font-bold normal-case">
                   Explore top destinations
                 </h2>
               </div>
-              <div className="display: flex items-center gap-6 sm:gap-3">
+              <div className="flex items-center gap-6 display: sm:gap-3">
                 <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
                   <FaArrowLeft />
                 </div>
@@ -124,7 +125,7 @@ export const Home = () => {
       {/* Travel Point */}
       <section className="mt-8">
         <div className="container">
-          <div className="display: flex items-center justify-around md:flex-col-reverse">
+          <div className="flex items-center justify-around display: md:flex-col-reverse">
             <img
               src="/images/home/Group 9238.png"
               alt="Travel point banner"
@@ -132,7 +133,7 @@ export const Home = () => {
             />
             <div className="md:text-center">
               <h3 className="text-[#F85E9F] uppercase">Travel Point</h3>
-              <h2 className="normal-case font-bold">
+              <h2 className="font-bold normal-case">
                 We helping you find
                 <br />
                 your dream location
@@ -146,6 +147,34 @@ export const Home = () => {
               </p>
               <TravelPointsCards />
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Key Features */}
+      <section className="mt-8">
+        <div className="container">
+          <div className="flex items-center justify-around lg:gap-8 md:flex-col">
+            <div className="left-wrapper">
+              <div className="md:text-center">
+                <h3 className="text-[#F85E9F] uppercase">Key Features</h3>
+                <h2 className="font-bold normal-case lg:text-[34px]">
+                  We offer best services
+                </h2>
+                <p className="text-[#191825] mt-1 mb-8 lg:text-[14px]">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  <br />
+                  text. It has roots in a piece of classical Latin literature
+                  <br />
+                  from 45 BC.
+                </p>
+              </div>
+              <KeyFeaturesCards />
+            </div>
+            <img
+              src="/images/home/BACKGROUND.png"
+              alt="Paradise on Earth"
+              className="xl:w-[500px] lg:w-[400px] md:w-[100%]"
+            />
           </div>
         </div>
       </section>
