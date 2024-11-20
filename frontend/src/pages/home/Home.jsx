@@ -1,4 +1,5 @@
 import React from "react";
+import { ServicesCards } from "../../components/ServicesCards";
 import { FaBriefcase } from "react-icons/fa6";
 
 export const Home = () => {
@@ -182,6 +183,22 @@ export const Home = () => {
               xs:w-14
             "
             />
+          </div>
+        </div>
+      </section>
+      {/* Our Services */}
+      <section className="mt-8">
+        <div className="container">
+          <div className="content">
+            <div className="text-center">
+              <h3 className="text-[#F85E9F]">Services</h3>
+              <h2>
+                Our top value
+                <br />
+                categories for you
+              </h2>
+            </div>
+            <ServicesCards />
           </div>
         </div>
       </section>
