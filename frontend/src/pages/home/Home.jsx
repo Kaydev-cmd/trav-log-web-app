@@ -231,13 +231,13 @@ export const Home = () => {
                 beauty of the world
               </h3>
             </div>
-            <div className="flex">
+            <div className="flex xs:flex-col xs:gap-4">
               <input
                 type="text"
                 placeholder="Your Email"
-                className="p-3 rounded-l-[12px] w-[400px] md:w-[280px] sm:w-[240px] xs:w-[180px]"
+                className="p-3 rounded-l-[12px] w-[400px] md:w-[280px] sm:w-[240px] xs:w-[100%] xs:rounded-[12px]"
               />
-              <button className="bg-[#5D50C6] p-4 rounded-r-[12px] text-white hover:opacity-[.9]">
+              <button className="bg-[#5D50C6] p-4 rounded-r-[12px] text-white hover:opacity-[.9] xs:rounded-[12px]">
                 Subscribe
               </button>
             </div>
