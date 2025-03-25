@@ -1,83 +1,99 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import { BiMenuAltLeft } from "react-icons/bi";
-// Work on Fonts
+import { IoClose } from "react-icons/io5";
+// Add functionality to Auth Buttons
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Discover", href: "#" },
+  { name: "Special Deals", href: "#" },
+  { name: "Contact", href: "#" },
+];
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
-      <div className="navbar">
-        <div className="container">
-          <div className="display: flex items-center justify-between py-[16px] px-[24px]">
-            <BiMenuAltLeft
-              size={30}
-              color="#5D50C6"
-              className="hidden md:flex sm:hidden"
-            />
-            <div className="md:relative md:left-[12%] sm:left-0">
-              <a href="/" className="display: flex items-center gap-[8px]">
-                <img
-                  src="/images/home/Logo.png"
-                  alt="Logo"
-                  className="w-[20px]"
-                />
-                <h1 className="text-[22px] normal-case font-bold md:text-[18px]">
-                  Travlog
-                </h1>
-              </a>
-            </div>
-            <div className="links">
-              <ul className="display: flex gap-[48px] lg:gap-8 md:hidden">
-                <li>
-                  <a
-                    href="/"
-                    className="transition duration-[.3] ease-in-out text-[#474747] hover:text-[#000000]"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="transition duration-[.3] ease-in-out text-[#474747] hover:text-[#000000]"
-                  >
-                    Discover
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="transition duration-[.3] ease-in-out text-[#474747] hover:text-[#000000]"
-                  >
-                    Special Deals
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="transition duration-[.3] ease-in-out text-[#474747] hover:text-[#000000]"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="display: flex gap-[16px] items-center sm:hidden">
-              <button className="transition duration-[.3] ease-in-out text-[#474747] hover:text-[#000000] md:text-[14px]">
-                Log In
-              </button>
-              <button className="transition duration-[.3] ease-in-out bg-[#5D50C6] py-2 px-6 rounded-[12px] text-white hover:opacity-[.8] md:text-[14px]">
-                Sign Up
-              </button>
-            </div>
-            <BiMenuAltRight
-              size={30}
-              color="#5D50C6"
-              className="hidden sm:flex"
-            />
+      <nav>
+        <div className="container flex items-center justify-between p-6">
+          {/* Logo */}
+          <div>
+            <a href="/" className="flex items-center gap-2 ">
+              <img
+                src="/images/home/Logo.png"
+                alt="Logo"
+                className="w-[20px]"
+              />
+              <h1 className="text-[18px] font-extrabold md:text-[16px]">
+                Travlog
+              </h1>
+            </a>
           </div>
+
+          {/* Navigation Links */}
+          <ul className="flex items-center gap-6 text-[#191825] font-semibold lg:gap-4 lg:font-medium md:gap-3 md:text-[14px] sm:hidden">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a href={link.href} className="hover:text-[#5D50C6]">
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Auth Buttons */}
+          <div className="flex gap-6 font-semibold sm:hidden">
+            <button className="text-[#191825] hover:text-[#5D50C6]">
+              Log In
+            </button>
+            <button className="bg-[#5D50C6] px-6 py-3 rounded-xl text-[#fff] cursor-pointer hover:opacity-85">
+              Sign Up
+            </button>
+          </div>
+
+          {/* Right Menu Icon (Mobile) */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            className="hidden sm:flex"
+          >
+            {menuOpen ? (
+              <IoClose size={30} color="#F85E9F" />
+            ) : (
+              <BiMenuAltRight size={30} color="#F85E9F" />
+            )}
+          </button>
+
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <div
+              className={`absolute top-16 left-0 w-full bg-[#F85E9F] py-4 shadow-lg text-white text-center transition-transform duration-300 ease-in-out ${
+                menuOpen
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-2 opacity-0 pointer-events-none"
+              }`}
+            >
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block py-2 hover:text-[#000]"
+                >
+                  {link.name}
+                </a>
+              ))}
+
+              {/* Auth Buttons in Mobile Menu */}
+              <div className="flex flex-col gap-4 mt-4">
+                <button className="hover:text-[#000]">Log In</button>
+                <button className="hover:text-[#000]">Sign Up</button>
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      </nav>
     </>
   );
 };
