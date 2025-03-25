@@ -6,45 +6,13 @@ import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
 // import { FaBriefcase } from "react-icons/fa6";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Hero from "../../components/Hero/Hero";
+import Icons from "../../components/Icons/Icons";
 
 export const Home = () => {
   return (
     <>
-      {/* Hero */}
       <Hero />
-
-      {/* Icons */}
-      {/* <section className="mt-8">
-        <div className="container">
-          <div className="flex items-center justify-between display:">
-            <img
-              src="/images/home/Group.png"
-              alt="Trip Advisor"
-              className="lg:w-20 lg:h-4 sm:w-16 sm:h-4 xs:w-12 xs:h-4"
-            />
-            <img
-              src="/images/home/Group 2.png"
-              alt="Expedia"
-              className="lg:w-20 lg:h-6 sm:w-16 sm:h-6 xs:w-12 xs:h-6"
-            />
-            <img
-              src="/images/home/Group 3.png"
-              alt="Booking.com"
-              className="lg:w-20 lg:h-4 sm:w-16 sm:h-4 xs:w-14"
-            />
-            <img
-              src="/images/home/Group 9235.png"
-              alt="Air BnB"
-              className="lg:w-20 lg:h-6 sm:w-16 xs:w-14"
-            />
-            <img
-              src="/images/home/Group 4.png"
-              alt="Orbitz"
-              className="lg:w-20 lg:h-4 sm:w-16 xs:w-14"
-            />
-          </div>
-        </div>
-      </section> */}
+      <Icons />
 
       {/* Our Services */}
       {/* <section className="mt-8">
