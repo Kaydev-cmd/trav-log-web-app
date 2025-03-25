@@ -1,5 +1,5 @@
 import React from "react";
-import { ServicesCards } from "../../components/ServicesCards";
+import { ServicesCards } from "../../components/Services/ServicesCards";
 import { DestinationCards } from "../../components/DestinationCards";
 import { TravelPointsCards } from "../../components/TravelPointsCards";
 import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
@@ -7,29 +7,14 @@ import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Hero from "../../components/Hero/Hero";
 import Icons from "../../components/Icons/Icons";
+import Services from "../../components/Services/Services";
 
 export const Home = () => {
   return (
     <>
       <Hero />
       <Icons />
-
-      {/* Our Services */}
-      {/* <section className="mt-8">
-        <div className="container">
-          <div className="content">
-            <div className="text-center">
-              <h3 className="text-[#F85E9F]">Services</h3>
-              <h2 className="font-bold normal-case xs:text-[32px]">
-                Our top value
-                <br />
-                categories for you
-              </h2>
-            </div>
-            <ServicesCards />
-          </div>
-        </div>
-      </section> */}
+      <Services />
 
       {/* Top Destinations */}
       {/* <section className="mt-8">
