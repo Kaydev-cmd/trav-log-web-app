@@ -32,7 +32,7 @@ export const Navbar = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className="flex items-center gap-6 text-[#191825] font-semibold lg:gap-4 lg:font-medium md:gap-3 md:text-[14px] sm:hidden">
+          <ul className="flex items-center gap-6 text-[#191825] lg:gap-4 lg:font-medium md:gap-3 md:text-[14px] sm:hidden">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a href={link.href} className="hover:text-[#5D50C6]">

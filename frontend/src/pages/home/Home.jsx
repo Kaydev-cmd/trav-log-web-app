@@ -3,55 +3,18 @@ import { ServicesCards } from "../../components/ServicesCards";
 import { DestinationCards } from "../../components/DestinationCards";
 import { TravelPointsCards } from "../../components/TravelPointsCards";
 import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
-import { FaBriefcase } from "react-icons/fa6";
+// import { FaBriefcase } from "react-icons/fa6";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Hero from "../../components/Hero/Hero";
 
 export const Home = () => {
   return (
     <>
       {/* Hero */}
-      <section className="mt-8">
-        <div className="container">
-          <div className="flex items-center justify-around display:">
-            <div className="left-wrapper">
-              <button className="display: flex items-center gap-[8px] bg-white p-3 rounded-[12px] text-[#F85E9F] mb-8 transition duration-[.3] ease-in-out hover:bg-[#000] sm:my-0 sm:mx-auto">
-                Explore the world!
-                <FaBriefcase size={20} />
-              </button>
-              <div className="sm:text-center">
-                <h2 className="text-[62px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[38px] font-bold">
-                  Travel to <span className="text-[#F85E9F]">top</span>
-                  <br />
-                  <span className="text-[#F85E9F]">destinations</span> around
-                  <br />
-                  the world
-                </h2>
-                <p className="text-[#191825] lg:text-[14px] md:text-[12px] sm:text-[14px] xs:text-[14px]">
-                  We always make our customers happy by
-                  <br />
-                  providing as many choices as possible
-                </p>
-              </div>
-              <div className="flex items-center gap-8 mt-8 lg:gap-2 sm:justify-center">
-                <button className="bg-[#5D50C6] py-3 px-8 rounded-[12px] text-white transition duration-[.3] ease-in-out hover:opacity-[.9] md:px-6">
-                  Get Started
-                </button>
-                <button className="display: flex items-center gap-2 bg-white py-3 px-8 rounded-[12px] border md:px-3">
-                  <img src="/images/home/play-circle.5 1.png" alt="Play" />
-                  Watch Demo
-                </button>
-              </div>
-            </div>
-            <img
-              src="/images/home/Hero-banner.png"
-              alt="Hero"
-              className="xl:w-[600px] lg:w-[400px] md:w-[320px] sm:hidden"
-            />
-          </div>
-        </div>
-      </section>
+      <Hero />
+
       {/* Icons */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="flex items-center justify-between display:">
             <img
@@ -81,9 +44,10 @@ export const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Our Services */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="content">
             <div className="text-center">
@@ -97,9 +61,10 @@ export const Home = () => {
             <ServicesCards />
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Top Destinations */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="content">
             <div className="flex items-center justify-between display: sm:flex-col">
@@ -121,9 +86,10 @@ export const Home = () => {
             <DestinationCards />
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Travel Point */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="flex items-center justify-around display: md:flex-col-reverse">
             <img
@@ -149,9 +115,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Key Features */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="flex items-center justify-around lg:gap-8 md:flex-col">
             <div className="left-wrapper">
@@ -177,10 +144,11 @@ export const Home = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Testimonials */}
       {/* Implement Swiper Effect */}
-      <section className="bg-[url('/images/home/Layer_1.png')] bg-cover bg-center bg-no-repeat mt-8">
+      {/* <section className="bg-[url('/images/home/Layer_1.png')] bg-cover bg-center bg-no-repeat mt-8">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
@@ -216,9 +184,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       {/* Subscribe */}
-      <section className="mt-8">
+      {/* <section className="mt-8">
         <div className="container">
           <div className="flex flex-col items-center gap-12">
             <div className="text-center">
@@ -243,7 +212,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
