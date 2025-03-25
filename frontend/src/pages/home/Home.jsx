@@ -1,13 +1,13 @@
 import React from "react";
 import { ServicesCards } from "../../components/Services/ServicesCards";
-import { DestinationCards } from "../../components/DestinationCards";
+import { DestinationCards } from "../../components/TopDestinations/DestinationCards";
 import { TravelPointsCards } from "../../components/TravelPointsCards";
 import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
 // import { FaBriefcase } from "react-icons/fa6";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Hero from "../../components/Hero/Hero";
 import Icons from "../../components/Icons/Icons";
 import Services from "../../components/Services/Services";
+import TopDestinations from "../../components/TopDestinations/TopDestinations";
 
 export const Home = () => {
   return (
@@ -15,31 +15,9 @@ export const Home = () => {
       <Hero />
       <Icons />
       <Services />
+      <TopDestinations />
 
       {/* Top Destinations */}
-      {/* <section className="mt-8">
-        <div className="container">
-          <div className="content">
-            <div className="flex items-center justify-between display: sm:flex-col">
-              <div className="mb-6 sm: sm:text-center">
-                <h3 className="text-[#F85E9F] uppercase">Top destinations</h3>
-                <h2 className="font-bold normal-case xs:text-[32px]">
-                  Explore top destinations
-                </h2>
-              </div>
-              <div className="flex items-center gap-6 display: sm:gap-3">
-                <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
-                  <FaArrowLeft />
-                </div>
-                <div className="bg-[#5D50C6] p-6 rounded-[50%] md:p-4 sm:p-2">
-                  <FaArrowRight color="white" />
-                </div>
-              </div>
-            </div>
-            <DestinationCards />
-          </div>
-        </div>
-      </section> */}
 
       {/* Travel Point */}
       {/* <section className="mt-8">
