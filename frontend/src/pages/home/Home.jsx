@@ -2,13 +2,15 @@ import React from "react";
 import { ServicesCards } from "../../components/Services/ServicesCards";
 import { DestinationCards } from "../../components/TopDestinations/DestinationCards";
 import { TravelPointsCards } from "../../components/TravelPoints/TravelPointsCards";
-import { KeyFeaturesCards } from "../../components/KeyFeaturesCards";
+import { KeyFeaturesCards } from "../../components/KeyFeatures/KeyFeaturesCards";
 // import { FaBriefcase } from "react-icons/fa6";
 import Hero from "../../components/Hero/Hero";
 import Icons from "../../components/Icons/Icons";
 import Services from "../../components/Services/Services";
 import TopDestinations from "../../components/TopDestinations/TopDestinations";
 import TravelPoints from "../../components/TravelPoints/TravelPoints";
+import KeyFeatures from "../../components/KeyFeatures/KeyFeatures";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 export const Home = () => {
   return (
@@ -18,75 +20,9 @@ export const Home = () => {
       <Services />
       <TopDestinations />
       <TravelPoints />
-
-      {/* Key Features */}
-      {/* <section className="mt-8">
-        <div className="container">
-          <div className="flex items-center justify-around lg:gap-8 md:flex-col">
-            <div className="left-wrapper">
-              <div className="md:text-center">
-                <h3 className="text-[#F85E9F] uppercase">Key Features</h3>
-                <h2 className="font-bold normal-case lg:text-[34px] xs:text-[32px]">
-                  We offer best services
-                </h2>
-                <p className="text-[#191825] mt-1 mb-8 lg:text-[14px] xs:text-[14px]">
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  <br />
-                  text. It has roots in a piece of classical Latin literature
-                  <br />
-                  from 45 BC.
-                </p>
-              </div>
-              <KeyFeaturesCards />
-            </div>
-            <img
-              src="/images/home/BACKGROUND.png"
-              alt="Paradise on Earth"
-              className="xl:w-[500px] lg:w-[400px] md:w-[100%]"
-            />
-          </div>
-        </div>
-      </section> */}
-
+      <KeyFeatures />
+      <Testimonials />
       {/* Testimonials */}
-      {/* Implement Swiper Effect */}
-      {/* <section className="bg-[url('/images/home/Layer_1.png')] bg-cover bg-center bg-no-repeat mt-8">
-        <div className="container">
-          <div className="flex items-center justify-between">
-            <div className="bg-white p-6 rounded-[50%] border md:p-4 sm:p-2">
-              <FaArrowLeft />
-            </div>
-            <div className="flex flex-col items-center gap-8">
-              <div className="text-center">
-                <h3 className="text-[#F85E9F]">Testimonials</h3>
-                <h2 className="font-bold normal-case xs:text-[32px]">
-                  Trust our clients
-                </h2>
-              </div>
-              <img src="/images/home/Ellipse 22.png" alt="A person" />
-              <p>
-                <span className="text-[20px] p-1 text-[#FF5722] font-bold xs:text-[16px]">
-                  Mark Smith
-                </span>
-                /
-                <span className="text-[16px] p-1 text-[#191825] xs:text-[14px]">
-                  Travel Enthusiast
-                </span>
-              </p>
-              <img src="/images/home/Frame 54.png" alt="Stars" />
-              <p className="text-center xs:text-[12px]">
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots
-                <br />
-                in a piece of classical Latin literature from 45 BC.
-              </p>
-            </div>
-            <div className="bg-[#5D50C6] p-6 rounded-[50%] md:p-4 sm:p-2">
-              <FaArrowRight color="white" />
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Subscribe */}
       {/* <section className="mt-8">
