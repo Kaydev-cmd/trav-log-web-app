@@ -54,7 +54,7 @@ const SocialIcon = ({ icon, url, label }) => {
 
 const FooterSection = ({ title, links }) => {
   return (
-    <div className="sm:text-center">
+    <div className="sm:text-center ">
       <h6 className="mb-3 font-bold">{title}</h6>
       <ul className="flex flex-col gap-4 sm:items-center">
         {links.map((link, index) => (
@@ -78,11 +78,11 @@ const FooterSection = ({ title, links }) => {
 export const Footer = () => {
   return (
     <>
-      <div className="h-auto mt-8 bg-white">
-        <div className="container">
-          {/* Logo & About */}
-          <div className="flex justify-between p-12 lg:p-8 lg:gap-8 md:gap-18 sm:flex-col sm:items-center">
-            <div className="flex flex-col gap-8 sm:items-center">
+      <div className="h-auto mt-8 bg-white ">
+        <div className="container flex justify-between">
+          <div className="flex items-center justify-between w-full p-12 lg:p-8 lg:gap-8 md:gap-18 sm:flex-col sm:items-center">
+            {/* Left Side (Logo & About) */}
+            <div className="flex flex-col flex-1 gap-8 sm:items-center">
               <a href="/" className="flex items-center gap-1">
                 <img
                   src="/images/home/Logo.png"
@@ -98,18 +98,20 @@ export const Footer = () => {
                 <br />
                 literature from 45 BC.
               </p>
+
               {/* Social Icons */}
-              <div className="flex gap-4">
+              <div className="flex justify-start gap-4">
                 {socialLinks.map((link, index) => (
                   <SocialIcon key={index} {...link} />
                 ))}
               </div>
-              {/* Footer Links */}
-              <div className="flex justify-center gap-12 mt-8 sm:flex-col lg:justify-start lg:mt-0">
-                {footerLinks.map((section, index) => (
-                  <FooterSection key={index} {...section} />
-                ))}
-              </div>
+            </div>
+
+            {/* Right Side (Footer Links) */}
+            <div className="flex justify-center flex-1 gap-12 mt-8 lg:justify-end lg:mt-0 sm:flex-col">
+              {footerLinks.map((section, index) => (
+                <FooterSection key={index} {...section} />
+              ))}
             </div>
           </div>
         </div>
